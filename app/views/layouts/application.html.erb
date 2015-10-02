@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advancemycode</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <%= render 'layouts/header' %>
+
+  <div class="jumbotron">
+    <%= yield :jumbotron %>
+  </div>
+
+  <div class="container">
+    <%= yield %>
+  </div>
+
+  <%= render 'layouts/footer' %>
+
+</body>
+</html>
