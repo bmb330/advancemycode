@@ -1,27 +1,45 @@
 $grid-float-breakpoint: 480px;
-$brand-primary: #2DAEFF;
-$brand-success: #0E73B2;
-$brand-info: #B2B017;
+$brand-primary: #FF5500;
+$brand-success: #00B2A6;
+$brand-info: #FF6619;
 $brand-warning: #CCC910;
 $brand-danger: #FF4647;
+$body-bg: #D7FFFC;
+$body-bg2: #B23B00;
+
+$font-family-sans-serif: "Roboto Condensed" "Arial Narrow" Arial sans-serif;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "front_page.scss";
 
+body {
+	background-color: $gray-lighter;
+}
+
 .container {
   padding-top: 55px;
 }
 
+.panel-info {
+	border-color: $brand-info;
+
+	.panel-heading {
+		background-color: $brand-info;
+		border-color: $brand-info;
+		color: $gray-lighter;
+	}
+}
 
 footer {
   bottom: 0;
   width: 100%;
   height: 4em;
-  background-color: $gray-lighter;
+  background-color: $gray-light;
   text-align: center;
 
   small {
+  	color: $gray-lighter;
     display: block;
     padding: 2rem;
   }

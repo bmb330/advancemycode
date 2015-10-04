@@ -5,7 +5,7 @@
 .jumbotron {
   background: url('codingsession.png') no-repeat center center fixed;
   background-size: cover;
-  min-height: 90vh;
+  min-height: 100vh;
   text-align: center;
   padding-top: 34vh;
 
@@ -33,4 +33,25 @@
       color: $gray-lighter;
     }
   }
+}
+
+.action-section {
+	margin-top: 10rem;
+	margin-bottom: 10rem;
+
+	.panel-content {
+		padding: 4.2rem 3.8rem;
+		height: 18rem;
+		font-size: 2rem;
+	}
+
+	a {
+		&:link, &:visited, &:hover, &:active {
+			text-decoration: none !important;
+			border-color: darken($brand-info, 15%);
+		}
+		&:hover .panel-heading {
+			background-color: darken($brand-info, 15%);
+		}
+	}
 }
